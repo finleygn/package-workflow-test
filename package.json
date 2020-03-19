@@ -19,10 +19,7 @@
     "type": "git",
     "url": "git@github.com:finleygn/package-workflow-test.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "author": "Finley G",
+  "author": "finleygn",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
