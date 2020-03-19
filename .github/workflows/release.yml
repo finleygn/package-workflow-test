@@ -53,7 +53,6 @@ jobs:
           branch: 'master'
       
       - name: Publish
-        run: yarn publish
+        run: yarn publish --access public
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
