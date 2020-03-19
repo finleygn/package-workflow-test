@@ -1,6 +1,6 @@
 class TestClass {
   public test(): void {
-    console.log('We testin');
+    console.log('We testing');
   }
 }
 
