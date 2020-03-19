@@ -1,0 +1,52 @@
+{
+  "name": "github-workflow-test",
+  "version": "1.0.0",
+  "description": "Im just testing stuff",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts src",
+    "test": "jest --passWithNoTests",
+    "test:ci": "yarn test --ci",
+    "build": "rollup -c",
+    "release": "standard-version --releaseCommitMessageFormat \"chore(release): {{currentTag}} [skip ci]\""
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:finleygn/package-workflow-test.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "author": "Finley G",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.7",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-typescript": "^6.1.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "rollup": "^1.25.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-delete": "^1.1.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "standard-version": "^7.0.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.8.3"
+  }
+}
